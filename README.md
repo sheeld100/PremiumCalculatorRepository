@@ -18,3 +18,16 @@ Request body sample :
   "occupation": "Cleaner",
   "deathSumInsured": 100000
 }
+
+Validations applied for Name,DateofBirth,Occupation,DeathSumInsurred. For wrong input eg : Occupation, you will get below response
+
+  "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1",
+  "title": "One or more validation errors occurred.",
+  "status": 400,
+  "errors": {
+    "Occupation": [
+      "Occupation 'Dancer' is not valid. Choose from: Cleaner, Doctor, Author, Farmer, Mechanic, Florist, Other."
+    ]
+  },
+  "traceId": "00-f1f095e06bc7d4a332e162548b5126a9-84cc2ede8ed92b76-00"
+}
