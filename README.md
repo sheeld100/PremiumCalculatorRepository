@@ -10,4 +10,11 @@ http://localhost:5252/Premium
 clarification: Only Name, DOB, Occupation are required fields.
 Don't have access to SSMS to create DB.
 Don't have access to Azure.
-To test the error handling: write something random e.g "xyz" after http://localhost:5252/ 
+To test API using Swagger Use link http://localhost:5252/swagger.
+Request body sample :
+{
+  "name": "Sheela",
+  "dateOfBirth": "1990-10-27T12:16:15.383Z",
+  "occupation": "Cleaner",
+  "deathSumInsured": 100000
+}
